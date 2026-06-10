@@ -8,7 +8,7 @@
                     <p>Lopende projecten met tevreden klanten.</p>
                 </li>
                 <li>
-                    <h3>200kW</h3>
+                    <h3>200<span>kW</span></h3>
                     <p>Slim aangestuurd vermogen.</p>
                 </li>
                 <li>
@@ -39,39 +39,28 @@
 
 #USPS .container ul {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
 
-@media (width > 700px) {
-    #USPS .container ul {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    #USPS .container ul li {
-        padding: 3rem;
-    }
-}
-
-@media (width > 1000px) {
-    #USPS .container ul {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
 #USPS .container ul li {
-    padding: 2rem;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding: 1.25rem;
     background: var(--usp-background);
     color: var(--usp-color);
 }
 
 #USPS .container ul li h3 {
     color: inherit;
-    font-size: 3rem;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+#USPS .container ul li h3 span {
+    font-size: 1.5rem;
 }
 
 #USPS .container ul li:nth-of-type(1) {
@@ -98,6 +87,22 @@
     #USPS .container {
         max-width: 1200px;
         margin-inline: auto;
+    }
+
+    #USPS .container ul li {
+        padding: 2rem;
+    }
+
+    #USPS .container ul li h3 {
+        color: inherit;
+        font-size: 3rem;
+        line-height: 1;
+    }
+}
+
+@media (width > 1000px) {
+    #USPS .container ul {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 </style>
