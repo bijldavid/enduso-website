@@ -6,7 +6,9 @@
                 <p class="sub-title">Veelgestelde vragen</p>
                 <div class="details-container">
                     <details name="FAQs">
-                        <summary><h3>Wat bedoelt Enduso met systeemintegratie?</h3></summary>
+                        <summary>
+                            <h3>Wat bedoelt Enduso met systeemintegratie?</h3>
+                        </summary>
                         <p class="reveal-ignore">Met systeemintegratie bedoelt Enduso het slim verbinden van
                             installaties,
                             energiestromen, data en
@@ -14,14 +16,18 @@
                             energiesysteem.</p>
                     </details>
                     <details name="FAQs">
-                        <summary><h3>Hoe helpt systeemintegratie bij netcongestie?</h3></summary>
+                        <summary>
+                            <h3>Hoe helpt systeemintegratie bij netcongestie?</h3>
+                        </summary>
                         <p class="reveal-ignore">Door beschikbare capaciteit slimmer te benutten en energiestromen
                             intelligent te sturen, kan de
                             druk op het elektriciteitsnet worden verminderd. Zo ontstaat er meer flexibiliteit binnen
                             bestaande aansluitingen.</p>
                     </details>
                     <details name="FAQs">
-                        <summary><h3>Voor wie zijn de oplossingen van Enduso geschikt?</h3></summary>
+                        <summary>
+                            <h3>Voor wie zijn de oplossingen van Enduso geschikt?</h3>
+                        </summary>
                         <p class="reveal-ignore">Enduso werkt voor organisaties die te maken hebben met
                             energie-uitdagingen
                             zoals netcongestie,
@@ -29,7 +35,9 @@
                             energievoorziening een belangrijk onderdeel is van de dagelijkse operatie.</p>
                     </details>
                     <details name="FAQs">
-                        <summary><h3>Werkt Enduso met vaste oplossingen of maatwerk?</h3></summary>
+                        <summary>
+                            <h3>Werkt Enduso met vaste oplossingen of maatwerk?</h3>
+                        </summary>
                         <p class="reveal-ignore">Elke locatie en organisatie is anders. Daarom kijkt Enduso per project
                             naar
                             de technische
@@ -37,10 +45,11 @@
                             systeemintegratie ontworpen.</p>
                     </details>
                     <details name="FAQs">
-                        <summary><h3>Waarom is samenwerking zo belangrijk?</h3></summary>
+                        <summary>
+                            <h3>Waarom is samenwerking zo belangrijk?</h3>
+                        </summary>
                         <p class="reveal-ignore">Energieprojecten raken vaak meerdere partijen, systemen en belangen.
-                            Door
-                            opdrachtgevers,
+                            Door opdrachtgevers,
                             leveranciers en technische experts vroegtijdig te verbinden, ontstaat een oplossing die niet
                             alleen technisch klopt, maar ook praktisch uitvoerbaar is.</p>
                     </details>
@@ -77,6 +86,7 @@
 
 #FAQS .container>div .details-container details {
     overflow: hidden;
+    padding-bottom: 1.5rem;
 }
 
 #FAQS .container>div .details-container details::details-content {
@@ -102,7 +112,6 @@
 }
 
 #FAQS .container>div .details-container details:not(:last-of-type) {
-    padding-bottom: 1.5rem;
     border-bottom: 1px solid var(--neutral-300);
 }
 
@@ -135,7 +144,7 @@
     font-family: artavion, sans-serif;
     font-weight: 400;
     line-height: 1.3em;
-    color: var(--neutral-900);
+    color: var(--neutral-700);
     font-size: calc(var(--h3-size) - 3px);
     text-wrap: wrap;
 }

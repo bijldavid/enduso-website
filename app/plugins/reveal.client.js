@@ -1,7 +1,7 @@
 import { nextTick } from 'vue'
 
 export default defineNuxtPlugin((nuxtApp) => {
-  const selector = 'h1, h2, h3, small, p, .reveal'
+  const selector = 'h1, h2, h3, small, p'
   const ignoreSelector = '.reveal-ignore, [data-reveal-ignore]'
 
   if (!('IntersectionObserver' in window)) {
