@@ -48,7 +48,7 @@ const testimonials = [
         icon: '/images/spierdijk-icon.png',
         testimonial: 'Door de samenwerking met Enduso hebben we meer grip gekregen op onze energievoorziening. Dat geeft vertrouwen in een periode waarin netcongestie veel onzekerheid veroorzaakt. ',
         name: 'Jane Smith',
-        role: 'COO, Golfbaan Spierdijk',
+        role: 'COO, Golfbaan',
         image: '/images/golfbaanspierdijk-white.png'
     },
     {
@@ -57,7 +57,7 @@ const testimonials = [
         icon: '/images/witflowerbulbs-icon.png',
         testimonial: 'Wat voor ons sterk werkt, is de manier waarop Enduso verschillende partijen bij elkaar brengt. Leveranciers, techniek en strategie worden echt verbonden.',
         name: 'Bob Johnson',
-        role: 'CTO, Wit Flower Bulbs',
+        role: 'CTO, WFB',
         image: '/images/witflowerbulbs-white.png'
     }
 ];
