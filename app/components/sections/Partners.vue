@@ -1,7 +1,7 @@
 <template>
     <section id="partners">
         <div class="container">
-            <h2 class="sub-title">Samenwerken aan duurzame energieoplossingen</h2>
+            <h2 class="sub-title">Partner leveranciers</h2>
             <div>
                 <div>
                     <img src="/images/croonwolter&dros-gray.png" alt="Croonwolter & Dros">

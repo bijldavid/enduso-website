@@ -161,20 +161,20 @@ header .container .logo-container .logo-text {
 }
 
 header.is-scrolled .container .logo-container .logo-text {
-  scale: 0;
+  scale: 0.1;
   opacity: 0;
 }
 
 header .container .logo-container .logo-mark {
   width: 45%;
   margin-left: 10%;
-  translate: 0;
+  translate: 0 0;
   transition: width .3s ease, translate .3s ease;
 }
 
 header.is-scrolled .container .logo-container .logo-mark {
   width: 30%;
-  translate: 0 60%;
+  translate: 0 65%;
 }
 
 header .container nav {
