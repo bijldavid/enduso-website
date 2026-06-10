@@ -40,7 +40,7 @@
 #USPS .container ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: .5rem;
 }
 
 #USPS .container ul li {
@@ -87,6 +87,10 @@
     #USPS .container {
         max-width: 1200px;
         margin-inline: auto;
+    }
+
+    #USPS .container ul {
+        gap: 1rem;
     }
 
     #USPS .container ul li {
