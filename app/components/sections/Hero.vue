@@ -75,7 +75,7 @@
     width: var(--section-width);
     display: grid;
     grid-template-areas: "stack";
-    padding-bottom: 10cqw;
+    padding-bottom: 17.5cqw;
 }
 
 #hero .container .bars .gradient {

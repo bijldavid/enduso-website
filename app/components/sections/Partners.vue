@@ -28,9 +28,10 @@
 }
 
 #partners .container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 3rem;
-    justify-content: center;
+    align-items: center;
 }
 
 #partners .container h2 {

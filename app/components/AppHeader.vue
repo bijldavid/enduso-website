@@ -120,6 +120,7 @@ header {
   background-color: transparent;
   transition: background-color 0.3s ease, backdrop-filter 0.3s ease, translate .3s ease;
   padding: 1rem var(--inline-padding);
+  border-bottom: 1px solid #ffffff40;
 }
 
 header.is-scrolled {
@@ -155,11 +156,13 @@ header.is-scrolled .container .logo-container {
 header .container .logo-container .logo-text {
   width: 100%;
   scale: 1;
-  transition: scale .3s ease;
+  opacity: 1;
+  transition: scale .3s ease, opacity .3s ease;
 }
 
 header.is-scrolled .container .logo-container .logo-text {
   scale: 0;
+  opacity: 0;
 }
 
 header .container .logo-container .logo-mark {
