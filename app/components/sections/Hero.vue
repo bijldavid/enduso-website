@@ -14,16 +14,16 @@
                 <span class="gradient"></span>
 
                 <div class="image-container">
-                    <img src="/images/colaboration-orange.png" alt="">
+                    <img src="/images/colaboration-orange.webp" alt="">
                 </div>
                 <div class="image-container">
-                    <img src="/images/solar-panels-purple.png" alt="">
+                    <img src="/images/solar-panels-purple.webp" alt="">
                 </div>
                 <div class="image-container">
-                    <img src="/images/wind-turbine-blue.png" alt="">
+                    <img src="/images/wind-turbine-blue.webp" alt="">
                 </div>
                 <div class="image-container">
-                    <img src="/images/ev-charger-green.png" alt="">
+                    <img src="/images/ev-charger-green.webp" alt="">
                 </div>
 
             </div>
