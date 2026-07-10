@@ -9,49 +9,116 @@
                         <summary>
                             <h3>Wat bedoelt Enduso met systeemintegratie?</h3>
                         </summary>
-                        <p class="reveal-ignore">Met systeemintegratie bedoelt Enduso het slim verbinden van
-                            installaties,
-                            energiestromen, data en
-                            bedrijfsprocessen. Het doel is om losse onderdelen te laten samenwerken als één betrouwbaar
-                            energiesysteem.</p>
+                        <p class="reveal-ignore">
+                            Met systeemintegratie bedoelt Enduso het slim met elkaar verbinden van energie-installaties,
+                            energiestromen, data en bedrijfsprocessen. Hierdoor werken verschillende energie-assets,
+                            zoals zonnepanelen, laadpalen, warmtepompen en batterijsystemen, samen als één efficiënt en
+                            betrouwbaar energiesysteem.
+                            <br>
+                            <br>
+                            Enduso gaat hierbij verder dan een standaard energie management systeem (EMS). Wij zorgen
+                            ervoor dat de aansturing en optimalisatie volledig worden afgestemd op de situatie en
+                            doelstellingen van jouw organisatie. Daarbij kijken we naar factoren zoals energieverbruik,
+                            energieopwek, flexibiliteit en toekomstige ontwikkelingen.
+                            <br>
+                            <br>
+                            Het resultaat is een geïntegreerd energiesysteem dat slimmer omgaat met energie, kosten
+                            helpt verlagen en jouw organisatie ondersteunt bij een duurzame en toekomstbestendige
+                            energievoorziening.
+                        </p>
                     </details>
                     <details name="FAQs">
                         <summary>
                             <h3>Hoe helpt systeemintegratie bij netcongestie?</h3>
                         </summary>
-                        <p class="reveal-ignore">Door beschikbare capaciteit slimmer te benutten en energiestromen
-                            intelligent te sturen, kan de
-                            druk op het elektriciteitsnet worden verminderd. Zo ontstaat er meer flexibiliteit binnen
-                            bestaande aansluitingen.</p>
+                        <p class="reveal-ignore">
+                            Systeemintegratie helpt organisaties om hun beschikbare netcapaciteit slimmer te benutten.
+                            Door energiestromen intelligent aan te sturen en installaties zoals zonnepanelen,
+                            batterijen, laadpalen en andere energie-assets goed op elkaar af te stemmen, wordt
+                            piekbelasting op het elektriciteitsnet verminderd.
+                            <br>
+                            <br>
+                            Hierdoor ontstaat meer flexibiliteit binnen de bestaande netaansluiting. Organisaties kunnen
+                            hun energieverbruik en -opwek beter sturen, waardoor zij minder afhankelijk zijn van
+                            uitbreiding van de netaansluiting en minder worden beperkt in hun groei.
+                            <br>
+                            <br>
+                            Met systeemintegratie houdt een organisatie bovendien zelf meer controle over het
+                            energiebeheer en kan zij efficiënter omgaan met de beschikbare capaciteit.
+                        </p>
                     </details>
                     <details name="FAQs">
                         <summary>
                             <h3>Voor wie zijn de oplossingen van Enduso geschikt?</h3>
                         </summary>
-                        <p class="reveal-ignore">Enduso werkt voor organisaties die te maken hebben met
-                            energie-uitdagingen
-                            zoals netcongestie,
-                            verduurzaming, groei of bedrijfszekerheid. Denk aan bedrijven en locaties waar
-                            energievoorziening een belangrijk onderdeel is van de dagelijkse operatie.</p>
+                        <p class="reveal-ignore">
+                            De oplossingen van Enduso zijn ontwikkeld voor organisaties die slimmer, efficiënter en
+                            toekomstgericht met energie willen omgaan. Wij helpen bedrijven die te maken hebben met
+                            uitdagingen zoals netcongestie, verduurzaming, groei of het vergroten van hun
+                            energiezekerheid.
+                            <br>
+                            <br>
+                            Onze oplossingen zijn vooral geschikt voor bedrijven en locaties met grotere
+                            energiebehoeften en meerdere energie-installaties, zoals zonnepanelen, laadpalen,
+                            windturbines, warmtepompen en batterijsystemen. Ook organisaties die meer controle willen
+                            over hun energieverbruik, energieopwek en beschikbare netcapaciteit kunnen profiteren van
+                            onze aanpak.
+                        </p>
                     </details>
                     <details name="FAQs">
                         <summary>
-                            <h3>Werkt Enduso met vaste oplossingen of maatwerk?</h3>
+                            <h3>Hoe gaan jullie te werk?</h3>
                         </summary>
-                        <p class="reveal-ignore">Elke locatie en organisatie is anders. Daarom kijkt Enduso per project
-                            naar
-                            de technische
-                            situatie, bedrijfsprocessen en toekomstplannen. Op basis daarvan wordt een passende
-                            systeemintegratie ontworpen.</p>
+                        <p class="reveal-ignore">
+                            We starten met de installatie van ons EMS hiermee analysen we jouw huidige energiesituatie,
+                            installaties en doelstellingen. Op basis daarvan bepalen we waar optimalisatie mogelijk is
+                            en ontwikkelen we een oplossing die aansluit op jouw organisatie. Vervolgens integreren en
+                            configureren we het EMS, zodat energie-assets slim worden aangestuurd en prestaties continu
+                            inzichtelijk zijn. Ook na implementatie blijven we optimaliseren om maximale waarde uit jouw
+                            energiesysteem te halen.
+                        </p>
+                    </details>
+                    <details name="FAQs">
+                        <summary>
+                            <h3>Hoe werkt het Enduso EMS?</h3>
+                        </summary>
+                        <p class="reveal-ignore">
+                            Het Enduso EMS (Energy Management System) is een slim softwareplatform dat de
+                            energie-installaties binnen jouw organisatie monitort, aanstuurt en optimaliseert.
+                            Na installatie brengen we samen de mogelijkheden en wensen van jouw organisatie in kaart. Op
+                            basis daarvan stellen we de juiste parameters en grenzen in, zodat het systeem aansluit op
+                            jouw situatie.
+                            <br>
+                            <br>
+                            Wanneer het EMS is geconfigureerd, neemt het systeem de slimme aansturing van jouw
+                            energie-assets over. Het kan bijvoorbeeld energieverbruik en -opwek optimaliseren,
+                            installaties tijdelijk dimmen of schakelen, en helpen bij het slim inkopen of verkopen van
+                            energie.
+                            <br>
+                            <br>
+                            Tijdens dit proces bewaakt het systeem de prestaties en zorgt het ervoor dat technische
+                            grenzen, bedrijfsprocessen en de kwaliteit van de energievoorziening gewaarborgd blijven.
+                        </p>
                     </details>
                     <details name="FAQs">
                         <summary>
                             <h3>Waarom is samenwerking zo belangrijk?</h3>
                         </summary>
-                        <p class="reveal-ignore">Energieprojecten raken vaak meerdere partijen, systemen en belangen.
-                            Door opdrachtgevers,
-                            leveranciers en technische experts vroegtijdig te verbinden, ontstaat een oplossing die niet
-                            alleen technisch klopt, maar ook praktisch uitvoerbaar is.</p>
+                        <p class="reveal-ignore">
+                            Energieprojecten zijn vaak complex en hebben invloed op verschillende partijen en belangen.
+                            Daarom gelooft Enduso in een integrale aanpak waarbij opdrachtgevers, leveranciers,
+                            technische experts en andere betrokken partijen vanaf het begin samenwerken.
+                            <br>
+                            <br>
+                            Door kennis en expertise te bundelen ontstaat een oplossing die niet alleen technisch goed
+                            werkt, maar ook praktisch haalbaar en toekomstbestendig is. Enduso begeleidt organisaties
+                            gedurende het hele traject en denkt actief mee over de verschillende mogelijkheden.
+                            <br>
+                            <br>
+                            Dankzij ons brede netwerk kunnen wij ondersteunen bij uiteenlopende vraagstukken, zoals
+                            technische keuzes, subsidieaanvragen, samenwerking binnen energiehubs en juridische of
+                            organisatorische aspecten.
+                        </p>
                     </details>
                 </div>
             </div>

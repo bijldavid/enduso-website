@@ -1,7 +1,7 @@
 <template>
     <section id="projects" data-reveal-ignore>
         <div class="container">
-            <h2 class="visually-hidden">Bekijk de projecten waar wij aan hebben gewerkt.</h2>
+            <h2>Bekijk onze projecten</h2>
 
             <div class="carousel">
                 <ul class="no-scrollbar" ref="carouselEl">
@@ -135,6 +135,15 @@ li:nth-of-type(4n + 4) {
 #projects {
     background: var(--background-100);
     padding: var(--block-padding) var(--inline-padding);
+}
+
+#projects .container {
+    display: grid;
+    gap: 2rem;
+}
+
+#projects .container h2 {
+    text-align: center;
 }
 
 #projects .container .carousel {
@@ -325,7 +334,6 @@ li:nth-of-type(4n + 4) {
     flex-wrap: wrap;
     gap: .5rem;
     justify-content: center;
-    margin-top: 2rem;
 }
 
 #projects .container nav ul li {

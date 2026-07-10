@@ -6,9 +6,11 @@
 
                 <div class="content-container">
                     <h1 class="reveal-ignore">Grip op <span>energie</span>, <br>ruimte voor <span>groei</span></h1>
-                    <p class="reveal-ignore">Enduso verbindt installaties, data en energieprocessen slim, voor minder
-                        netcongestie, meer
-                        bedrijfszekerheid en toekomstbestendige groei.</p>
+                    <p class="reveal-ignore">
+                        Met Enduso kiest u voor een betrouwbare energie oplossing die kosten
+                        bespaart, de energiekwaliteit verbetert en bijdraagt aan een duurzame en toekomstbestendige
+                        energievoorziening.
+                    </p>
                 </div>
 
                 <span class="gradient"></span>

@@ -4,20 +4,20 @@
             <h2 class="visually-hidden">Onze unieke voordelen</h2>
             <ul>
                 <li>
-                    <h3>10+</h3>
-                    <p>Lopende projecten met tevreden klanten.</p>
+                    <img src="/images/view.png" alt="">
+                    <p>Krijg helder inzicht in verbruik, energiestromen en beschikbare capaciteit.</p>
                 </li>
                 <li>
-                    <h3>200<span>kW</span></h3>
-                    <p>Slim aangestuurd vermogen.</p>
+                    <img src="/images/gear.png" alt="">
+                    <p>Stuur opwek, opslag en verbruik slim aan voor meer grip en stabiliteit.</p>
                 </li>
                 <li>
-                    <h3>6</h3>
-                    <p>Samenwerkende partners.</p>
+                    <img src="/images/dollar-sign.png" alt="">
+                    <p>Verlaag kosten, verbeter energiekwaliteit en haal meer uit uw systeem.</p>
                 </li>
                 <li>
-                    <h3>1M</h3>
-                    <p>kWh aan energie slimmer benut.</p>
+                    <img src="/images/grow-up.png" alt="">
+                    <p>Bouw aan een energie-systeem dat meebeweegt met uw organisatie.</p>
                 </li>
             </ul>
         </div>
@@ -47,16 +47,14 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 1.25rem;
     background: var(--usp-background);
     color: var(--usp-color);
 }
 
-#USPS .container ul li h3 {
-    color: inherit;
-    font-size: 2rem;
-    line-height: 1;
+#USPS .container ul li img {
+    width: 4rem;
 }
 
 #USPS .container ul li h3 span {

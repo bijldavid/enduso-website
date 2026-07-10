@@ -1,11 +1,11 @@
 <template>
     <main>
         <SectionsHero />
-        <SectionsEMS />
+        <SectionsProjecten />
+        <SectionsIntro />
         <SectionsUSPs />
         <span class="hr"></span>
         <SectionsPartners />
-        <SectionsProjecten />
         <SectionsTestimonials />
         <SectionsFAQs />
     </main>
