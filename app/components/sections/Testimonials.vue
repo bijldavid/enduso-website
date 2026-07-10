@@ -47,8 +47,8 @@ const testimonials = [
         label: 'Golfbaan Spierdijk',
         icon: '/images/spierdijk-icon.png',
         testimonial: 'Door de samenwerking met Enduso hebben we meer grip gekregen op onze energievoorziening. Dat geeft vertrouwen in een periode waarin netcongestie veel onzekerheid veroorzaakt. ',
-        name: 'Paul Schoenmakers',
-        role: 'COO, Golfbaan',
+        name: 'Paul Schoenmaker',
+        role: 'Golfbaan Spierdijk',
         image: '/images/golfbaanspierdijk-white.png'
     },
     {
