@@ -48,7 +48,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding: 1.25rem;
+    padding: 1.5rem;
     background: var(--usp-background);
     color: var(--usp-color);
 }
