@@ -1,7 +1,7 @@
 <template>
     <section id="intro">
         <div class="container">
-            <h2>Enduso EMS brengt energie in balans</h2>
+            <h2>Enduso brengt energie in balans</h2>
             <div>
                 <p class="sub-title" data-reveal-ignore>Meer grip, minder congestie</p>
                 <p>Bij Enduso leveren we meer dan een Energy Management Systeem (EMS). We ontwikkelen een integraal
