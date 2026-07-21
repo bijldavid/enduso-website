@@ -21,16 +21,17 @@
     position: relative;
     font-weight: 400;
     line-height: 1.75em;
-    font-family: aptos, sans-serif;
+    font-family: poppins, sans-serif;
     font-size: 1rem;
     font-style: normal;
+    font-size: var(--sub-title-size);
     color: var(--blue);
 }
 
 .breadcrumbs a:not(:last-of-type)::before {
     content: '';
     position: absolute;
-    height: 1rem;
+    height: var(--sub-title-size);
     aspect-ratio: 1;
     top: 50%;
     right: calc(var(--gap) / 2 * -1);
@@ -42,4 +43,4 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-</style><!--  -->
+</style>
