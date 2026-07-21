@@ -122,7 +122,7 @@ main .container ul li h2 {
     top: 0;
     left: 0;
     padding: .5rem 1.5rem;
-    border-radius: 15px 0 15px 0;
+    border-radius: 0 0 15px 0;
     background: var(--brand-background);
     z-index: 1;
     font-family: poppins, sans-serif;

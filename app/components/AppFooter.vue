@@ -13,19 +13,19 @@
       <nav>
         <ul>
           <li>
-            <a href="#EMS">Energiesysteem</a>
+            <p>info@enduso.nl</p>
           </li>
           <li>
-            <a href="#leveranciers">Leveranciers</a>
+            <p>+31 6 12345678</p>
           </li>
           <li>
-            <a href="#projects">Projecten</a>
+            <p>Enduso B.V.</p>
           </li>
           <li>
-            <a href="#testimonials">Testimonials</a>
+            <p>1234 AB, Amsterdam</p>
           </li>
           <li>
-            <a href="#FAQS">FAQ</a>
+            <p>LinkedIn</p>
           </li>
         </ul>
         <a href="#hero"><img src="/images/footer-up-arrow.png" alt="Back to top"></a>
@@ -128,12 +128,12 @@ footer .container nav ul li a:hover::before {
   width: 100%;
 }
 
-footer .container nav > a {
+footer .container nav>a {
   isolation: isolate;
   position: relative;
 }
 
-footer .container nav > a::before {
+footer .container nav>a::before {
   content: '';
   position: absolute;
   z-index: -1;
@@ -148,11 +148,11 @@ footer .container nav > a::before {
   transition: scale 0.15s ease;
 }
 
-footer .container nav > a:hover::before {
+footer .container nav>a:hover::before {
   scale: 1;
 }
 
-footer .container nav > a img {
+footer .container nav>a img {
   height: 1.25rem;
   width: auto;
 }
@@ -187,7 +187,7 @@ footer .container .legal {
     align-items: start;
   }
 
-  footer .container nav > a {
+  footer .container nav>a {
     height: max-content;
   }
 }

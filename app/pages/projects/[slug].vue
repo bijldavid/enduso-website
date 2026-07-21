@@ -12,7 +12,7 @@
 
             <div class="text-container">
                 <h1>{{ project.title }}</h1>
-                <ProjectsThialf v-if="project.id === 'thialf'" />
+                <component :is="projectComponent" v-if="projectComponent" />
             </div>
         </div>
     </main>
@@ -22,9 +22,18 @@
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { getProjectDetailBySlug } from '~/data/project-details'
+import Thialf from '~/components/projects/Thialf.vue'
+import WitFlowerBulbs from '~/components/projects/WitFlowerBulbs.vue'
 
 const route = useRoute()
 const project = computed(() => getProjectDetailBySlug(String(route.params.slug ?? '')))
+
+const projectComponents = {
+    thialf: Thialf,
+    witflowerbulbs: WitFlowerBulbs,
+}
+
+const projectComponent = computed(() => project.value ? projectComponents[project.value.id] ?? null : null)
 
 useHead(() => ({
     title: project.value ? `${project.value.label} | Projecten` : 'Projecten',

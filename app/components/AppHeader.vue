@@ -1,5 +1,5 @@
 <template>
-  <header :class="{ 'is-scrolled': isScrolled }">
+  <header :class="{ 'is-scrolled': isScrolled, 'is-projects-overview': isProjectsOverview }">
     <div class="container">
       <a href="/" class="logo-container">
         <img class="logo-mark" src="/images/enduso-logo-mark.png" alt="enduso-logo-mark">
@@ -8,11 +8,9 @@
 
       <nav :class="{ 'toggle-menu': menuOpen, 'menu-interacted': menuInteracted }" @click="handleNavClick">
         <ul>
-          <li><a href="#EMS">Energiesysteem</a></li>
-          <li><a href="#partners">Leveranciers</a></li>
-          <li><a href="#projects">Projecten</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#FAQS">FAQs</a></li>
+          <li><NuxtLink to="/">Home</NuxtLink></li>
+          <li><NuxtLink to="/projects">Projecten</NuxtLink></li>
+          <li><NuxtLink to="/About">About</NuxtLink></li>
         </ul>
       </nav>
 
@@ -26,7 +24,8 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted, watch } from 'vue'
+import { computed, ref, onMounted, onUnmounted, watch } from 'vue'
+import { useRoute } from 'vue-router'
 
 /* ================================================== */
 /* STATE                                              */
@@ -35,6 +34,8 @@ import { ref, onMounted, onUnmounted, watch } from 'vue'
 const menuOpen = ref(false)
 const menuInteracted = ref(false)
 const isScrolled = ref(false)
+const route = useRoute()
+const isProjectsOverview = computed(() => route.path === '/projects')
 
 /* ================================================== */
 /* HELPERS                                            */
@@ -157,7 +158,11 @@ header .container .logo-container .logo-text {
   width: 100%;
   scale: 1;
   opacity: 1;
-  transition: scale .3s ease, opacity .3s ease;
+  transition: filter .3s ease, scale .3s ease, opacity .3s ease;
+}
+
+header.is-projects-overview .container .logo-container .logo-text {
+  filter: brightness(0);
 }
 
 header.is-scrolled .container .logo-container .logo-text {
@@ -410,6 +415,11 @@ header.hidden {
     border: none;
     background-color: transparent;
   }
+
+  header.is-projects-overview .container nav ul li a {
+    color: var(--neutral-700);
+  }
+
 
   header .container nav ul li a:hover {
     background-color: #ffffff20 !important;
