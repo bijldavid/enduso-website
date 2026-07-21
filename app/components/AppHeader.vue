@@ -1,10 +1,10 @@
 <template>
   <header :class="{ 'is-scrolled': isScrolled }">
     <div class="container">
-      <div class="logo-container">
+      <a href="/" class="logo-container">
         <img class="logo-mark" src="/images/enduso-logo-mark.png" alt="enduso-logo-mark">
         <img class="logo-text" src="/images/enduso-logo-text.png" alt="enduso-logo-text">
-      </div>
+      </a>
 
       <nav :class="{ 'toggle-menu': menuOpen, 'menu-interacted': menuInteracted }" @click="handleNavClick">
         <ul>

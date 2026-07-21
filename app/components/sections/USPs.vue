@@ -4,7 +4,7 @@
             <h2 class="visually-hidden">Onze unieke voordelen</h2>
             <ul>
                 <li>
-                    <img src="/images/view.png" alt="">
+                    <img src="/images/eye.png" alt="">
                     <p>Krijg helder inzicht in verbruik, energiestromen en beschikbare capaciteit.</p>
                 </li>
                 <li>
@@ -12,11 +12,11 @@
                     <p>Stuur opwek, opslag en verbruik slim aan voor meer grip en stabiliteit.</p>
                 </li>
                 <li>
-                    <img src="/images/dollar-sign.png" alt="">
+                    <img src="/images/money.png" alt="">
                     <p>Verlaag kosten, verbeter energiekwaliteit en haal meer uit uw systeem.</p>
                 </li>
                 <li>
-                    <img src="/images/grow-up.png" alt="">
+                    <img src="/images/grow.png" alt="">
                     <p>Bouw aan een energie-systeem dat meebeweegt met uw organisatie.</p>
                 </li>
             </ul>

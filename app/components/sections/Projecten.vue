@@ -5,14 +5,21 @@
 
             <div class="carousel">
                 <ul class="no-scrollbar" ref="carouselEl">
-                    <li v-for="(project, index) in projects" :key="project.id"
-                        class="reveal-ignore">
-                        <h3 class="reveal-ignore">
-                            {{ project.title }}
-                            <span>{{ project.highlight }}</span>
-                            {{ project.afterHighlight }}
-                        </h3>
-                        <div>
+                    <li v-for="(project, index) in projects" :key="project.id" class="reveal-ignore">
+                        <div class="text-container">
+                            <h3 class="reveal-ignore">
+                                {{ project.title }}
+                                <span>{{ project.highlight }}</span>
+                                {{ project.afterHighlight }}
+                            </h3>
+                            <NuxtLink :to="`/projects/${project.id}`" class="reveal-ignore">
+                                <span>Lees meer</span>
+                                <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <polyline class="cls-1" points="7.721 2.01 16.279 12 7.721 21.99" />
+                                </svg>
+                            </NuxtLink>
+                        </div>
+                        <div class="meta-data">
                             <p class="index">{{ project.index }}</p>
                             <p class="project-label">{{ project.label }}</p>
                         </div>
@@ -39,61 +46,8 @@
 
 <script setup>
 import { ref, watch } from 'vue'
-
-const projects = [
-    {
-        id: 'thialf',
-        title: 'Slimme systeemintegratie achter het ijs van',
-        highlight: 'Thialf',
-        index: '001',
-        label: 'Thialf',
-        navLabel: 'Thialf',
-        image: '/images/thialf-project.jpg',
-        alt: 'Thialf Project',
-    },
-    {
-        id: 'golfbaan-spierdijk',
-        title: 'Bij',
-        highlight: 'Golfbaan Spierdijk',
-        afterHighlight: 'komt energie en buitenruimte samen',
-        index: '002',
-        label: 'Golfbaan Spierdijk',
-        navLabel: 'Golfbaan Spierdijk',
-        image: '/images/golfbaanspierdijk-project.jpg',
-        alt: 'Golfbaan Spierdijk Project',
-    },
-    {
-        id: 'witflowerbulbs',
-        title: 'Slimme energie voor de bloembollenteelt van',
-        highlight: 'Wit Flower Bulbs',
-        index: '003',
-        label: 'Wit Flower Bulbs',
-        navLabel: 'Wit Flower Bulbs',
-        image: '/images/witflowerbulbs-project.jpg',
-        alt: 'Wit Flower Bulbs Project',
-    },
-    {
-        id: 'blankendaal',
-        title: 'Bij',
-        highlight: 'Blankendaal',
-        afterHighlight: 'wordt energie slim afgestemd op de teelt',
-        index: '004',
-        label: 'Blankendaal',
-        navLabel: 'Blankendaal',
-        image: '/images/blankendaal-project.jpg',
-        alt: 'Blankendaal Project',
-    },
-    {
-        id: 'bovegro',
-        title: 'Betrouwbare energie achter het groenbeheer van',
-        highlight: 'Bovegro',
-        index: '005',
-        label: 'Bovegro',
-        navLabel: 'Bovegro',
-        image: '/images/bovegro-project.jpg',
-        alt: 'Bovegro Project',
-    }
-]
+import { projectCarouselItems } from '~/data/project-carousel'
+const projects = projectCarouselItems
 
 const currentIndex = ref(0)
 const carouselEl = ref(null)
@@ -118,18 +72,22 @@ watch(currentIndex, (i) => {
 
 li:nth-of-type(4n + 1) {
     --project-color: var(--orange);
+    --project-color-pastel: var(--pastel-orange);
 }
 
 li:nth-of-type(4n + 2) {
     --project-color: var(--purple);
+    --project-color-pastel: var(--pastel-purple);
 }
 
 li:nth-of-type(4n + 3) {
     --project-color: var(--blue);
+    --project-color-pastel: var(--pastel-blue);
 }
 
 li:nth-of-type(4n + 4) {
     --project-color: var(--green);
+    --project-color-pastel: var(--pastel-green);
 }
 
 #projects {
@@ -191,25 +149,74 @@ li:nth-of-type(4n + 4) {
     z-index: 1;
 }
 
-
-#projects .container .carousel ul li h3 {
+#projects .container .carousel ul li .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
     position: absolute;
     top: 2rem;
     left: 50%;
     translate: -50%;
     width: 80%;
-
-    color: var(--neutral-100);
-    font-size: var(--h2-size);
-    text-align: center;
     z-index: 2;
 }
 
-#projects .container .carousel ul li h3 span {
+#projects .container .carousel ul li .text-container h3 {
+    color: var(--neutral-100);
+    font-size: var(--h2-size);
+    text-align: center;
+}
+
+#projects .container .carousel ul li .text-container a {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--neutral-100);
+    background: transparent;
+    border: 2px solid var(--neutral-100);
+    padding: .5rem 1.5rem;
+    border-radius: 5px;
+    backdrop-filter: blur(3px);
+}
+
+#projects .container .carousel ul li .text-container a span {
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    line-height: 1.5em;
+    font-size: var(--sub-title-size);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+}
+
+#projects .container .carousel ul li .text-container a svg {
+    display: block;
+    height: var(--sub-title-size);
+    width: var(--sub-title-size);
+    stroke: var(--neutral-100);
+    stroke-width: 3px;
+    fill: none;
+    margin-bottom: 1px;
+}
+
+
+#projects .container .carousel ul li .text-container a:hover {
+    background: var(--neutral-100);
+    color: var(--project-color);
+}
+
+
+
+#projects .container .carousel ul li .text-container h3 span {
     background: var(--project-color);
 }
 
-#projects .container .carousel ul li div {
+#projects .container .carousel ul li .text-container a:hover svg {
+    stroke: var(--project-color);
+}
+
+#projects .container .carousel ul li .meta-data {
     position: absolute;
     left: 2rem;
     bottom: 2rem;
@@ -218,7 +225,7 @@ li:nth-of-type(4n + 4) {
     z-index: 2;
 }
 
-#projects .container .carousel ul li div p {
+#projects .container .carousel ul li .meta-data p {
     color: var(--neutral-100);
     line-height: 1em;
     text-transform: uppercase;
@@ -226,14 +233,14 @@ li:nth-of-type(4n + 4) {
     font-size: 1.25rem;
 }
 
-#projects .container .carousel ul li div p.project-label {
+#projects .container .carousel ul li .meta-data p.project-label {
     color: var(--neutral-100);
     background: var(--project-color);
     padding: .25rem .15rem;
 }
 
 @media (width < 600px) {
-    #projects .container .carousel ul li div p.project-label {
+    #projects .container .carousel ul li .meta-data p.project-label {
         display: none;
     }
 }
@@ -372,7 +379,7 @@ li:nth-of-type(4n + 4) {
         max-width: 30ch;
     }
 
-    #projects .container .carousel ul li>div {
+    #projects .container .carousel ul li .meta-data {
         bottom: 3rem;
         left: 3rem;
     }
