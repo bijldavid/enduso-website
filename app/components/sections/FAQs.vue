@@ -179,7 +179,7 @@
 }
 
 #FAQS .container>div .details-container details:not(:last-of-type) {
-    border-bottom: 1px solid var(--neutral-300);
+    border-bottom: 1px solid var(--background-200);
 }
 
 #FAQS .container>div .details-container details summary {
