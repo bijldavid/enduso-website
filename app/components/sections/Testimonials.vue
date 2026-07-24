@@ -2,20 +2,39 @@
     <section id="testimonials">
         <div class="container">
             <h2>Wat partners over Enduso zeggen:</h2>
+
             <div class="card-container">
                 <ul>
-                    <li v-for="(testimonial, i) in testimonials" :key="testimonial.id" class="glass-border-dark"
-                        :style="{ '--index': indices[i] }" :class="{ 'animate-out': animatingCards.has(i) }"
-                        @animationend="() => { animatingCards.delete(i); animatingCards.value = new Set(animatingCards.value); }">
-
+                    <li
+                        v-for="(testimonial, i) in testimonials"
+                        :key="testimonial.id"
+                        class="glass-border-dark"
+                        :style="{ '--index': indices[i] }"
+                        :class="{ 'animate-out': animatingCards.has(i) }"
+                        @animationend="() => {
+                            animatingCards.delete(i)
+                            animatingCards.value = new Set(animatingCards.value)
+                        }"
+                    >
                         <small>
-                            <img :src="testimonial.icon" :alt="''" aria-hidden="true">
+                            <img
+                                :src="assetUrl(testimonial.icon)"
+                                alt=""
+                                aria-hidden="true"
+                            >
                             {{ testimonial.label }}
                         </small>
+
                         <p>{{ testimonial.testimonial }}</p>
+
                         <span class="hr"></span>
+
                         <div>
-                            <img :src="testimonial.image" :alt="testimonial.name" aria-hidden="true">
+                            <img
+                                :src="assetUrl(testimonial.image)"
+                                :alt="testimonial.name"
+                            >
+
                             <div>
                                 <p class="name">{{ testimonial.name }}</p>
                                 <p class="role">{{ testimonial.role }}</p>
@@ -23,14 +42,20 @@
                         </div>
                     </li>
                 </ul>
-                <button class="glass-border-light" @click="handleNext"></button>
+
+                <button
+                    class="glass-border-light"
+                    @click="handleNext"
+                ></button>
             </div>
         </div>
     </section>
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref } from 'vue'
+
+const { assetUrl } = useAssetUrl()
 
 const testimonials = [
     {
@@ -40,16 +65,16 @@ const testimonials = [
         testimonial: 'Enduso kijkt verder dan alleen de techniek. Ze denken mee over onze bedrijfsprocessen, de netcapaciteit en de praktische haalbaarheid van de oplossing.',
         name: 'Minne Dolstra',
         role: 'CEO, Thialf',
-        image: '/images/thialf-white.webp'
+        image: '/images/thialf-white.webp',
     },
     {
         id: 2,
         label: 'Golfbaan Spierdijk',
         icon: '/images/spierdijk-icon.png',
-        testimonial: 'Door de samenwerking met Enduso hebben we meer grip gekregen op onze energievoorziening. Dat geeft vertrouwen in een periode waarin netcongestie veel onzekerheid veroorzaakt. ',
+        testimonial: 'Door de samenwerking met Enduso hebben we meer grip gekregen op onze energievoorziening. Dat geeft vertrouwen in een periode waarin netcongestie veel onzekerheid veroorzaakt.',
         name: 'Paul Schoenmaker',
         role: 'Golfbaan Spierdijk',
-        image: '/images/golfbaanspierdijk-white.webp'
+        image: '/images/golfbaanspierdijk-white.webp',
     },
     {
         id: 3,
@@ -58,22 +83,22 @@ const testimonials = [
         testimonial: 'Wat voor ons sterk werkt, is de manier waarop Enduso verschillende partijen bij elkaar brengt. Leveranciers, techniek en strategie worden echt verbonden.',
         name: 'Peter Wit',
         role: 'CTO, WFB',
-        image: '/images/witflowerbulbs-white.webp'
-    }
-];
+        image: '/images/witflowerbulbs-white.webp',
+    },
+]
 
-const indices = ref(testimonials.map((_, i) => i));
-const animatingCards = ref(new Set());
+const indices = ref(testimonials.map((_, i) => i))
+const animatingCards = ref(new Set())
 
 function handleNext() {
-    const frontIndex = indices.value.indexOf(0);
+    const frontIndex = indices.value.indexOf(0)
 
-    animatingCards.value.add(frontIndex);
-    animatingCards.value = new Set(animatingCards.value);
+    animatingCards.value.add(frontIndex)
+    animatingCards.value = new Set(animatingCards.value)
 
     indices.value = indices.value.map((index) =>
         index === 0 ? testimonials.length - 1 : index - 1
-    );
+    )
 }
 </script>
 
