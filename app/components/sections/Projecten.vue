@@ -5,38 +5,74 @@
 
             <div class="carousel">
                 <ul class="no-scrollbar" ref="carouselEl">
-                    <li v-for="(project, index) in projects" :key="project.id" class="reveal-ignore">
+                    <li
+                        v-for="(project, index) in projects"
+                        :key="project.id"
+                        class="reveal-ignore"
+                    >
                         <div class="text-container">
                             <h3 class="reveal-ignore">
                                 {{ project.title }}
                                 <span>{{ project.highlight }}</span>
                                 {{ project.afterHighlight }}
                             </h3>
-                            <NuxtLink :to="`/projects/${project.id}`" class="reveal-ignore">
+
+                            <NuxtLink
+                                :to="`/projects/${project.id}`"
+                                class="reveal-ignore"
+                            >
                                 <span>Lees meer</span>
-                                <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                    <polyline class="cls-1" points="7.721 2.01 16.279 12 7.721 21.99" />
+
+                                <svg
+                                    id="Layer_1"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <polyline
+                                        class="cls-1"
+                                        points="7.721 2.01 16.279 12 7.721 21.99"
+                                    />
                                 </svg>
                             </NuxtLink>
                         </div>
+
                         <div class="meta-data">
                             <p class="index">{{ project.index }}</p>
                             <p class="project-label">{{ project.label }}</p>
                         </div>
-                        <img :src="project.image" :alt="project.alt">
+
+                        <img
+                            :src="assetUrl(project.image)"
+                            :alt="project.alt"
+                        >
                     </li>
                 </ul>
+
                 <div class="navigation glass-border-light">
-                    <button class="left" @click="prev" :disabled="currentIndex === 0"></button>
-                    <button class="right" @click="next" :disabled="currentIndex === projects.length - 1"></button>
+                    <button
+                        class="left"
+                        @click="prev"
+                        :disabled="currentIndex === 0"
+                    ></button>
+
+                    <button
+                        class="right"
+                        @click="next"
+                        :disabled="currentIndex === projects.length - 1"
+                    ></button>
                 </div>
             </div>
 
             <nav>
                 <ul>
-                    <li v-for="(project, index) in projects" :key="project.id"
-                        :class="{ active: index === currentIndex }">
-                        <button @click="goTo(index)">{{ project.navLabel }}</button>
+                    <li
+                        v-for="(project, index) in projects"
+                        :key="project.id"
+                        :class="{ active: index === currentIndex }"
+                    >
+                        <button @click="goTo(index)">
+                            {{ project.navLabel }}
+                        </button>
                     </li>
                 </ul>
             </nav>
@@ -47,21 +83,37 @@
 <script setup>
 import { ref, watch } from 'vue'
 import { projectCarouselItems } from '~/data/project-carousel'
+
+const { assetUrl } = useAssetUrl()
+
 const projects = projectCarouselItems
 
 const currentIndex = ref(0)
 const carouselEl = ref(null)
 
 function goTo(index) {
-    currentIndex.value = Math.max(0, Math.min(index, projects.length - 1))
+    currentIndex.value = Math.max(
+        0,
+        Math.min(index, projects.length - 1)
+    )
 }
 
-function prev() { goTo(currentIndex.value - 1) }
-function next() { goTo(currentIndex.value + 1) }
+function prev() {
+    goTo(currentIndex.value - 1)
+}
+
+function next() {
+    goTo(currentIndex.value + 1)
+}
 
 watch(currentIndex, (i) => {
     const slide = carouselEl.value?.children[i]
-    slide?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' })
+
+    slide?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'start',
+    })
 })
 </script>
 
