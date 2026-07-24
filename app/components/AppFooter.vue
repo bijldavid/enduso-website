@@ -33,10 +33,10 @@
             <p>+31 6 12345678</p>
           </li>
           <li>
-            <img src="/images/enduso-white.webp" alt="Enduso B.V.">
-            <p>Enduso B.V.</p>
+            <img src="/images/enduso-white.webp" alt="Enduso Nederland B.V.">
+            <p>Enduso Nederland B.V.</p>
           </li>
-          <li>
+          <!-- <li>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
               class="icon icon-tabler icons-tabler-outline icon-tabler-map">
@@ -46,7 +46,7 @@
               <path d="M15 7v13" />
             </svg>
             <p>1234 AB, Amsterdam</p>
-          </li>
+          </li> -->
           <li>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -58,7 +58,7 @@
               <path d="M16 16v-3a2 2 0 1 0 -4 0" />
               <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10" />
             </svg>
-            <a href="">LinkedIn</a>
+            <a href="https://www.linkedin.com/company/enduso/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </li>
         </ul>
         <button type="button" class="to-top" @click="scrollToTop" aria-label="Back to top">

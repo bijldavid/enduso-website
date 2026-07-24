@@ -16,6 +16,9 @@
                 aansturingssoftware. De verschillende onderdelen functioneren daardoor niet
                 langer als losse installaties, maar als één samenwerkend energiesysteem.
             </p>
+
+            <img src="/images/thialf-solar.webp" alt="Thialf energiehub">
+
         </div>
 
         <div>
@@ -39,6 +42,7 @@
                 houden, maar draagt zij ook bij aan het balanceren en ontlasten van het
                 elektriciteitsnet.
             </p>
+            <img src="/images/thialf-battery.jpg" alt="Thialf energiehub">
         </div>
 
         <div>
@@ -57,6 +61,7 @@
                 energiemarkt. De energiehub vormt daarmee een schaalbare basis waarop het
                 stadion in de toekomst verder kan verduurzamen.
             </p>
+
         </div>
 
         <div>
@@ -90,5 +95,9 @@
 
     article div h3 {
         margin-bottom: 0.5rem;
+    }
+
+    article div img {
+        margin-block: 1rem;
     }
 </style>

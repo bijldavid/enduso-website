@@ -24,13 +24,21 @@ import { useRoute } from 'vue-router'
 import { getProjectDetailBySlug } from '~/data/project-details'
 import Thialf from '~/components/projects/Thialf.vue'
 import WitFlowerBulbs from '~/components/projects/WitFlowerBulbs.vue'
+import Bovegro from '~/components/projects/Bovegro.vue'
+import GolfbaanSpierdijk from '~/components/projects/GolfbaanSpierdijk.vue'
+import Hemrik from '~/components/projects/Hemrik.vue'
+import Blankendaal from '~/components/projects/Blankendaal.vue'
 
 const route = useRoute()
 const project = computed(() => getProjectDetailBySlug(String(route.params.slug ?? '')))
 
 const projectComponents = {
     thialf: Thialf,
+    golfbaanspierdijk: GolfbaanSpierdijk,
     witflowerbulbs: WitFlowerBulbs,
+    bovegro: Bovegro,
+    hemrik: Hemrik,
+    blankendaal: Blankendaal,
 }
 
 const projectComponent = computed(() => project.value ? projectComponents[project.value.id] ?? null : null)
@@ -85,7 +93,7 @@ main .container {
 
 main .container .text-container {
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 main .container .text-container h1 {

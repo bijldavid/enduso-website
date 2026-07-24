@@ -11,7 +11,7 @@ export const projectCarouselItems = [
         alt: 'Thialf Project',
     },
     {
-        id: 'golfbaan-spierdijk',
+        id: 'golfbaanspierdijk',
         title: 'Bij',
         highlight: 'Golfbaan Spierdijk',
         afterHighlight: 'komt energie en buitenruimte samen',

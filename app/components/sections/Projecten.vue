@@ -242,7 +242,7 @@ watch(currentIndex, (i) => {
     left: 50%;
     translate: -50%;
     display: flex;
-    background: linear-gradient(90deg, var(--brand-blue), var(--pastel-blue));
+    background: linear-gradient(90deg, var(--pastel-blue), var(--pastel-blue));
     height: 40px;
     width: 100px;
     border-radius: 10px;

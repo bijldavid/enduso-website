@@ -55,8 +55,6 @@ main .container h1 {
     text-wrap: balance;
 }
 
-main .container h1 span {}
-
 main .container .content-container {
     display: grid;
     gap: 2rem;
@@ -64,7 +62,7 @@ main .container .content-container {
 
 @media (width > 700px) {
     main .container {
-        max-width: 1200px;
+        max-width: 800px;
         margin-inline: auto;
     }
 

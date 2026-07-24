@@ -10,8 +10,8 @@
                     <div class="text-container">
                         <h3>Agrarische bedrijven</h3>
                         <p>
-                            We helpen agrarische bedrijven met het slim aansturen van hun energievoorziening, zodat ze
-                            hun bedrijfsvoering kunnen optimaliseren en verduurzamen.
+                            Door opwek, opslag en verbruik slim af te stemmen, krijgen agrarische bedrijven meer grip op
+                            energiekosten, netcapaciteit en continuïteit.
                         </p>
                     </div>
                 </li>
@@ -22,8 +22,8 @@
                     <div class="text-container">
                         <h3>Bedrijventerreinen</h3>
                         <p>
-                            We helpen bedrijventerreinen met het slim aansturen van hun energievoorziening, zodat ze hun
-                            bedrijfsvoering kunnen optimaliseren en verduurzamen.
+                            Op bedrijventerreinen verbinden we energiestromen tussen organisaties, zodat beschikbare
+                            capaciteit slimmer wordt verdeeld en beter wordt benut.
                         </p>
                     </div>
                 </li>
@@ -34,8 +34,8 @@
                     <div class="text-container">
                         <h3>Sportcomplex</h3>
                         <p>
-                            We helpen sportcomplexen met het slim aansturen van hun energievoorziening, zodat ze hun
-                            bedrijfsvoering kunnen optimaliseren en verduurzamen.
+                            Sportcomplexen combineren verlichting, koeling en laadinfra. Enduso stuurt deze installaties
+                            samen aan voor lagere pieken en meer zekerheid.
                         </p>
                     </div>
                 </li>
@@ -46,8 +46,8 @@
                     <div class="text-container">
                         <h3>logistieke bedrijven</h3>
                         <p>
-                            We helpen logistieke bedrijven met het slim aansturen van hun energievoorziening, zodat ze
-                            hun bedrijfsvoering kunnen optimaliseren en verduurzamen.
+                            Voor logistieke bedrijven stemmen we laadinfra, opslag en processen op elkaar af, zodat
+                            voertuigen betrouwbaar laden zonder onnodige netpieken.
                         </p>
                     </div>
                 </li>
@@ -58,8 +58,8 @@
                     <div class="text-container">
                         <h3>Laadinfra-exploitanten</h3>
                         <p>
-                            We helpen laadinfra-exploitanten met het slim aansturen van hun energievoorziening, zodat ze
-                            hun bedrijfsvoering kunnen optimaliseren en verduurzamen.
+                            Laadinfra-exploitanten krijgen controle over laadvermogen en capaciteit, zodat meer
+                            voertuigen efficiënt en betrouwbaar kunnen worden geladen.
                         </p>
                     </div>
                 </li>
@@ -70,8 +70,8 @@
                     <div class="text-container">
                         <h3>Vastgoed</h3>
                         <p>
-                            We helpen vastgoedbedrijven met het slim aansturen van hun energievoorziening, zodat ze hun
-                            bedrijfsvoering kunnen optimaliseren en verduurzamen.
+                            Binnen vastgoed verbinden we gebouwinstallaties, opwek en opslag tot één energiesysteem dat
+                            kosten verlaagt en ruimte biedt voor verduurzaming.
                         </p>
                     </div>
                 </li>

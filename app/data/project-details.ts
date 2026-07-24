@@ -7,10 +7,10 @@ export const projectDetails = [
         alt: 'Thialf Project',
     },
     {
-        id: 'golfbaan-spierdijk',
+        id: 'golfbaanspierdijk',
         title: 'Bij Golfbaan Spierdijk komt energie en buitenruimte samen',
         label: 'Golfbaan Spierdijk',
-        bannerImage: '/images/golfbaanspierdijk-project.webp',
+        bannerImage: '/images/golfbaanspierdijk-banner.png',
         alt: 'Golfbaan Spierdijk Project',
     },
     {
@@ -38,7 +38,7 @@ export const projectDetails = [
         id: 'hemrik',
         title: 'Op de Hemrik wordt netcapaciteit slim gedeeld tussen bedrijven',
         label: 'Hemrik',
-        bannerImage: '/images/hemrik-project.webp',
+        bannerImage: '/images/hemrik-banner.png',
         alt: 'Hemrik Project',
     },
 ]

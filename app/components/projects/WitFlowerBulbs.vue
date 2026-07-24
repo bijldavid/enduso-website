@@ -15,6 +15,9 @@
                 Om de groei niet stil te laten vallen, ging Wit Flower Bulbs samen met Enduso
                 op zoek naar een oplossing binnen de bestaande netcapaciteit.
             </p>
+
+            <img src="/images/wfb-team.jpg" alt="Wit Flower Bulbs team">
+
         </div>
 
         <div>
@@ -104,5 +107,9 @@ article div {
 
 article div h3 {
     margin-bottom: 0.5rem;
+}
+
+article div img {
+    margin-block: 1rem;
 }
 </style>
