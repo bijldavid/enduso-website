@@ -7,7 +7,7 @@ export const projectCarouselItems = [
         index: '001',
         label: 'Thialf',
         navLabel: 'Thialf',
-        image: '/images/thialf-project.jpg',
+        image: '/images/thialf-project.webp',
         alt: 'Thialf Project',
     },
     {
@@ -18,7 +18,7 @@ export const projectCarouselItems = [
         index: '002',
         label: 'Golfbaan Spierdijk',
         navLabel: 'Golfbaan Spierdijk',
-        image: '/images/golfbaanspierdijk-project.jpg',
+        image: '/images/golfbaanspierdijk-project.webp',
         alt: 'Golfbaan Spierdijk Project',
     },
     {
@@ -29,7 +29,7 @@ export const projectCarouselItems = [
         index: '003',
         label: 'Wit Flower Bulbs',
         navLabel: 'Wit Flower Bulbs',
-        image: '/images/witflowerbulbs-project.jpg',
+        image: '/images/witflowerbulbs-project.webp',
         alt: 'Wit Flower Bulbs Project',
     },
     {
@@ -40,7 +40,7 @@ export const projectCarouselItems = [
         index: '004',
         label: 'Blankendaal',
         navLabel: 'Blankendaal',
-        image: '/images/blankendaal-project.jpg',
+        image: '/images/blankendaal-project.webp',
         alt: 'Blankendaal Project',
     },
     {
@@ -51,7 +51,7 @@ export const projectCarouselItems = [
         index: '005',
         label: 'Bovegro',
         navLabel: 'Bovegro',
-        image: '/images/bovegro-project.jpg',
+        image: '/images/bovegro-project.webp',
         alt: 'Bovegro Project',
     },
     {
@@ -62,7 +62,7 @@ export const projectCarouselItems = [
         index: '006',
         label: 'Hemrik',
         navLabel: 'Hemrik',
-        image: '/images/hemrik-project.jpg',
+        image: '/images/hemrik-project.webp',
         alt: 'Hemrik Project',
     },
 ]

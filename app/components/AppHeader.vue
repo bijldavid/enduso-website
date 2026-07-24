@@ -1,9 +1,9 @@
 <template>
-  <header :class="{ 'is-scrolled': isScrolled, 'is-projects-overview': isProjectsOverview }">
+  <header :class="{ 'is-scrolled': isScrolled, 'has-black-header': hasBlackHeader }">
     <div class="container">
       <a href="/" class="logo-container">
-        <img class="logo-mark" src="/images/enduso-logo-mark.png" alt="enduso-logo-mark">
-        <img class="logo-text" src="/images/enduso-logo-text.png" alt="enduso-logo-text">
+        <img class="logo-mark" src="/images/enduso-logo-mark.webp" alt="enduso-logo-mark">
+        <img class="logo-text" src="/images/enduso-logo-text.webp" alt="enduso-logo-text">
       </a>
 
       <nav :class="{ 'toggle-menu': menuOpen, 'menu-interacted': menuInteracted }" @click="handleNavClick">
@@ -35,7 +35,8 @@ const menuOpen = ref(false)
 const menuInteracted = ref(false)
 const isScrolled = ref(false)
 const route = useRoute()
-const isProjectsOverview = computed(() => route.path === '/projects')
+const blackHeaderRoutes = ['/projects', '/About']
+const hasBlackHeader = computed(() => blackHeaderRoutes.includes(route.path))
 
 /* ================================================== */
 /* HELPERS                                            */
@@ -161,7 +162,7 @@ header .container .logo-container .logo-text {
   transition: filter .3s ease, scale .3s ease, opacity .3s ease;
 }
 
-header.is-projects-overview .container .logo-container .logo-text {
+header.has-black-header .container .logo-container .logo-text {
   filter: brightness(0);
 }
 
@@ -208,22 +209,6 @@ header .container nav ul li {
   position: relative;
   /* width: max-content; */
   height: 100%;
-}
-
-header .container nav ul li:nth-of-type(4n + 1) {
-  --brand-color: var(--orange);
-}
-
-header .container nav ul li:nth-of-type(4n + 2) {
-  --brand-color: var(--purple);
-}
-
-header .container nav ul li:nth-of-type(4n + 3) {
-  --brand-color: var(--blue);
-}
-
-header .container nav ul li:nth-of-type(4n + 4) {
-  --brand-color: var(--green);
 }
 
 header .container nav ul li a {
@@ -416,7 +401,7 @@ header.hidden {
     background-color: transparent;
   }
 
-  header.is-projects-overview .container nav ul li a {
+  header.has-black-header .container nav ul li a {
     color: var(--neutral-700);
   }
 

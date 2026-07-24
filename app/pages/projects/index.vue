@@ -1,5 +1,5 @@
 <template>
-    <main id="projects-index">
+    <main>
         <div class="container">
             <Breadcrumbs>
                 <a href="/">Home</a>

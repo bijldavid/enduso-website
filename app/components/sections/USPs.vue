@@ -4,19 +4,19 @@
             <h2 class="visually-hidden">Onze unieke voordelen</h2>
             <ul>
                 <li>
-                    <img src="/images/eye.png" alt="">
+                    <img src="/images/eye.webp" alt="">
                     <p>Krijg helder inzicht in verbruik, energiestromen en beschikbare capaciteit.</p>
                 </li>
                 <li>
-                    <img src="/images/gear.png" alt="">
+                    <img src="/images/gear.webp" alt="">
                     <p>Stuur opwek, opslag en verbruik slim aan voor meer grip en stabiliteit.</p>
                 </li>
                 <li>
-                    <img src="/images/money.png" alt="">
+                    <img src="/images/money.webp" alt="">
                     <p>Verlaag kosten, verbeter energiekwaliteit en haal meer uit uw systeem.</p>
                 </li>
                 <li>
-                    <img src="/images/grow.png" alt="">
+                    <img src="/images/grow.webp" alt="">
                     <p>Bouw aan een energie-systeem dat meebeweegt met uw organisatie.</p>
                 </li>
             </ul>
@@ -49,36 +49,16 @@
     flex-direction: column;
     gap: 1.5rem;
     padding: 1.5rem;
-    background: var(--usp-background);
-    color: var(--usp-color);
+    background: var(--brand-background);
+    color: var(--brand-color);
 }
 
 #USPS .container ul li img {
-    width: 4rem;
+    width: 3.5rem;
 }
 
 #USPS .container ul li h3 span {
     font-size: 1.5rem;
-}
-
-#USPS .container ul li:nth-of-type(1) {
-    --usp-background: var(--pastel-orange);
-    --usp-color: var(--orange);
-}
-
-#USPS .container ul li:nth-of-type(2) {
-    --usp-background: var(--pastel-purple);
-    --usp-color: var(--purple);
-}
-
-#USPS .container ul li:nth-of-type(3) {
-    --usp-background: var(--pastel-blue);
-    --usp-color: var(--blue);
-}
-
-#USPS .container ul li:nth-of-type(4) {
-    --usp-background: var(--pastel-green);
-    --usp-color: var(--green);
 }
 
 @media (width > 700px) {

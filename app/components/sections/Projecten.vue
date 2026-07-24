@@ -70,26 +70,6 @@ watch(currentIndex, (i) => {
 /* PROJECTEN */
 /* - - - - - - - - - - - - - - - - - - - - */
 
-li:nth-of-type(4n + 1) {
-    --project-color: var(--orange);
-    --project-color-pastel: var(--pastel-orange);
-}
-
-li:nth-of-type(4n + 2) {
-    --project-color: var(--purple);
-    --project-color-pastel: var(--pastel-purple);
-}
-
-li:nth-of-type(4n + 3) {
-    --project-color: var(--blue);
-    --project-color-pastel: var(--pastel-blue);
-}
-
-li:nth-of-type(4n + 4) {
-    --project-color: var(--green);
-    --project-color-pastel: var(--pastel-green);
-}
-
 #projects {
     background: var(--background-100);
     padding: var(--block-padding) var(--inline-padding);
@@ -203,17 +183,17 @@ li:nth-of-type(4n + 4) {
 
 #projects .container .carousel ul li .text-container a:hover {
     background: var(--neutral-100);
-    color: var(--project-color);
+    color: var(--brand-color);
 }
 
 
 
 #projects .container .carousel ul li .text-container h3 span {
-    background: var(--project-color);
+    background: var(--brand-color);
 }
 
 #projects .container .carousel ul li .text-container a:hover svg {
-    stroke: var(--project-color);
+    stroke: var(--brand-color);
 }
 
 #projects .container .carousel ul li .meta-data {
@@ -235,7 +215,7 @@ li:nth-of-type(4n + 4) {
 
 #projects .container .carousel ul li .meta-data p.project-label {
     color: var(--neutral-100);
-    background: var(--project-color);
+    background: var(--brand-color);
     padding: .25rem .15rem;
 }
 
@@ -262,7 +242,7 @@ li:nth-of-type(4n + 4) {
     left: 50%;
     translate: -50%;
     display: flex;
-    background: linear-gradient(90deg, var(--pastel-blue), var(--pastel-blue));
+    background: linear-gradient(90deg, var(--brand-blue), var(--pastel-blue));
     height: 40px;
     width: 100px;
     border-radius: 10px;
@@ -329,11 +309,11 @@ li:nth-of-type(4n + 4) {
 }
 
 #projects .container .carousel .navigation button.left {
-    background-image: url(/images/arrow-left.png);
+    background-image: url(/images/arrow-left.webp);
 }
 
 #projects .container .carousel .navigation button.right {
-    background-image: url(/images/arrow-right.png);
+    background-image: url(/images/arrow-right.webp);
 }
 
 #projects .container nav ul {
@@ -365,7 +345,7 @@ li:nth-of-type(4n + 4) {
 
 #projects .container nav ul li.active {
     opacity: 1;
-    background: var(--project-color);
+    background: var(--brand-color);
 }
 
 @media (width > 700px) {
@@ -455,7 +435,7 @@ li:nth-of-type(4n + 4) {
         width: 7.5px;
         left: -1rem;
         top: -.5rem;
-        background: var(--project-color);
+        background: var(--brand-color);
     }
 }
 </style>

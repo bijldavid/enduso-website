@@ -195,7 +195,7 @@
     translate: 0 -50%;
     height: 1rem;
     width: 1rem;
-    background-image: url('/images/chevron.png');
+    background-image: url('/images/chevron.webp');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;

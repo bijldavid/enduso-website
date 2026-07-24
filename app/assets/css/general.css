@@ -25,6 +25,8 @@
 
     --devider-bright: rgba(255, 255, 255, 0.10);
     --devider-dark: rgba(0, 0, 0, 0.10);
+    --selection-highlight: var(--pastel-green);
+    --selection-text-color: var(--green);
 
     /* PADDING */
 
@@ -71,8 +73,13 @@ body {
 }
 
 ::selection {
-    /* background: #a2ee46;
-    color: var(--GSS-primary); */
+    background: color-mix(in srgb, var(--selection-highlight) 70%, transparent 30%);
+    color: var(--selection-text-color);
+}
+
+::-moz-selection {
+  background: color-mix(in srgb, var(--selection-highlight) 70%, transparent 30%);
+    color: var(--selection-text-color);
 }
 
 
@@ -118,7 +125,7 @@ h3 {
     translate: 0 -50%;
     height: 1rem;
     width: 1rem;
-    background-image: url('/images/diamond.png');
+    background-image: url('/images/diamond.webp');
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
@@ -152,11 +159,35 @@ p {
     translate: 0 -35%;
     height: .6rem;
     width: .6rem;
-    background-image: url('/images/external-arrow.png');
+    background-image: url('/images/external-arrow.webp');
     background-size: 100%;
     background-position: center;
     background-repeat: repeat;
     transition: background-position 0.3s ease;
+}
+
+/* ================================================== */
+/* BRAND COLORS                                       */
+/* ================================================== */
+
+ul li:nth-of-type(4n + 1) {
+    --brand-background: var(--pastel-orange);
+    --brand-color: var(--orange);
+}
+
+ul li:nth-of-type(4n + 2) {
+    --brand-background: var(--pastel-purple);
+    --brand-color: var(--purple);
+}
+
+ul li:nth-of-type(4n + 3) {
+    --brand-background: var(--pastel-blue);
+    --brand-color: var(--blue);
+}
+
+ul li:nth-of-type(4n + 4) {
+    --brand-background: var(--pastel-green);
+    --brand-color: var(--green);
 }
 
 /* ================================================== */

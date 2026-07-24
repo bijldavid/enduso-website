@@ -52,7 +52,7 @@
 
 #service .container .content-container {
     display: grid;
-    grid-template-columns: 1fr 300px;
+    grid-template-columns: 1fr min(300px, 60vw);
 }
 
 /* - - - - - - - - - - - - - - - - - - - - */
@@ -133,26 +133,6 @@
     display: grid;
     grid-auto-rows: 1fr;
     gap: 1rem;
-}
-
-#service .container .content-container ul li:nth-of-type(4n + 1) {
-    --brand-background: var(--pastel-orange);
-    --brand-color: var(--orange);
-}
-
-#service .container .content-container ul li:nth-of-type(4n + 2) {
-    --brand-background: var(--pastel-purple);
-    --brand-color: var(--purple);
-}
-
-#service .container .content-container ul li:nth-of-type(4n + 3) {
-    --brand-background: var(--pastel-blue);
-    --brand-color: var(--blue);
-}
-
-#service .container .content-container ul li:nth-of-type(4n + 4) {
-    --brand-background: var(--pastel-green);
-    --brand-color: var(--green);
 }
 
 #service .container .content-container ul li {

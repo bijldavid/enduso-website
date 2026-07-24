@@ -40,7 +40,7 @@ const testimonials = [
         testimonial: 'Enduso kijkt verder dan alleen de techniek. Ze denken mee over onze bedrijfsprocessen, de netcapaciteit en de praktische haalbaarheid van de oplossing.',
         name: 'Minne Dolstra',
         role: 'CEO, Thialf',
-        image: '/images/thialf-white.png'
+        image: '/images/thialf-white.webp'
     },
     {
         id: 2,
@@ -49,7 +49,7 @@ const testimonials = [
         testimonial: 'Door de samenwerking met Enduso hebben we meer grip gekregen op onze energievoorziening. Dat geeft vertrouwen in een periode waarin netcongestie veel onzekerheid veroorzaakt. ',
         name: 'Paul Schoenmaker',
         role: 'Golfbaan Spierdijk',
-        image: '/images/golfbaanspierdijk-white.png'
+        image: '/images/golfbaanspierdijk-white.webp'
     },
     {
         id: 3,
@@ -58,7 +58,7 @@ const testimonials = [
         testimonial: 'Wat voor ons sterk werkt, is de manier waarop Enduso verschillende partijen bij elkaar brengt. Leveranciers, techniek en strategie worden echt verbonden.',
         name: 'Peter Wit',
         role: 'CTO, WFB',
-        image: '/images/witflowerbulbs-white.png'
+        image: '/images/witflowerbulbs-white.webp'
     }
 ];
 
@@ -211,7 +211,7 @@ function handleNext() {
     background: var(--pastel-blue);
     overflow: hidden;
 
-    background-image: url(/images/arrow-right.png);
+    background-image: url(/images/arrow-right.webp);
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: center;

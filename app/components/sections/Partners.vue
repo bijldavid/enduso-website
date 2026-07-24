@@ -7,10 +7,10 @@
                     <img src="/images/croonwolter&dros-gray.png" alt="Croonwolter & Dros">
                 </div>
                 <div>
-                    <img src="/images/gebrdevries-gray.png" alt="gebr. de Vries">
+                    <img src="/images/gebrdevries-gray.webp" alt="gebr. de Vries">
                 </div>
                 <div>
-                    <img src="/images/kraandorpwijnker-gray.png" alt="Kraandorp Wijnker">
+                    <img src="/images/kraandorpwijnker-gray.webp" alt="Kraandorp Wijnker">
                 </div>
             </div>
         </div>
@@ -72,15 +72,15 @@
 }
 
 #partners .container>div div:nth-of-type(1):hover::before {
-    background-image: url("/images/croonwolter&dros.png");
+    background-image: url("/images/croonwolter&dros.webp");
 }
 
 #partners .container>div div:nth-of-type(2):hover::before {
-    background-image: url("/images/gebrdevries.png");
+    background-image: url("/images/gebrdevries.webp");
 }
 
 #partners .container>div div:nth-of-type(3):hover::before {
-    background-image: url("/images/kraandorpwijnker.png");
+    background-image: url("/images/kraandorpwijnker.webp");
 }
 
 #partners .container>div div img {

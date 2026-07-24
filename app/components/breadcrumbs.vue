@@ -26,6 +26,12 @@
     font-style: normal;
     font-size: var(--sub-title-size);
     color: var(--blue);
+    padding: .25rem;
+    border-radius: 5px;
+}
+
+.breadcrumbs a:hover {
+    background: var(--background-100);
 }
 
 .breadcrumbs a:not(:last-of-type)::before {
@@ -38,7 +44,7 @@
     translate: 50% -50%;
     pointer-events: none;
 
-    background-image: url(/images/breadcrum-arrow.png);
+    background-image: url(/images/breadcrum-arrow.webp);
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: center;
