@@ -33,10 +33,10 @@ article div {
 }
 
 article div .maintenance {
-    display: flex;
+    display: grid;
+    grid-template-columns: 25px 1fr;
     align-items: center;
     gap: 1.5rem;
-    width: max-content;
     border-radius: 10px;
 }
 
@@ -46,9 +46,11 @@ article div .maintenance {
 
 article div .maintenance svg {
     stroke: var(--orange);
+    width: 100%;
 }
 
 article div .maintenance h3 {
     color: var(--orange);
+
 }
 </style>
