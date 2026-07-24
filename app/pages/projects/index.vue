@@ -10,17 +10,24 @@
 
             <div>
                 <ul>
-                    <li v-for="project in projects" :key="project.id" class="project-card">
+                    <li
+                        v-for="project in projects"
+                        :key="project.id"
+                        class="project-card"
+                    >
                         <NuxtLink :to="`/projects/${project.id}`">
                             <div class="image-container">
-                                <img :src="project.bannerImage" :alt="project.alt">
+                                <img
+                                    :src="assetUrl(project.bannerImage)"
+                                    :alt="project.alt"
+                                >
                             </div>
+
                             <h2>{{ project.label }}</h2>
                             <p>{{ project.title }}</p>
                         </NuxtLink>
                     </li>
                 </ul>
-
             </div>
         </div>
     </main>
@@ -28,6 +35,8 @@
 
 <script setup>
 import { projectDetails } from '~/data/project-details'
+
+const { assetUrl } = useAssetUrl()
 
 const projects = projectDetails
 </script>

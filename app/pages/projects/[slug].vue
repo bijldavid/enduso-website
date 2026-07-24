@@ -1,13 +1,16 @@
 <template>
     <div class="banner">
-        <img :src="project.bannerImage" :alt="project.alt">
+        <img v-if="project" :src="assetUrl(project.bannerImage)" :alt="project.alt">
     </div>
-    <main>
+
+    <main v-if="project">
         <div class="container">
             <Breadcrumbs>
                 <NuxtLink to="/">Home</NuxtLink>
                 <NuxtLink to="/projects">Projecten</NuxtLink>
-                <NuxtLink :to="`/projects/${project.id}`">{{ project.label }}</NuxtLink>
+                <NuxtLink :to="`/projects/${project.id}`">
+                    {{ project.label }}
+                </NuxtLink>
             </Breadcrumbs>
 
             <div class="text-container">
@@ -22,6 +25,7 @@
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { getProjectDetailBySlug } from '~/data/project-details'
+
 import Thialf from '~/components/projects/Thialf.vue'
 import WitFlowerBulbs from '~/components/projects/WitFlowerBulbs.vue'
 import Bovegro from '~/components/projects/Bovegro.vue'
@@ -30,7 +34,13 @@ import Hemrik from '~/components/projects/Hemrik.vue'
 import Blankendaal from '~/components/projects/Blankendaal.vue'
 
 const route = useRoute()
-const project = computed(() => getProjectDetailBySlug(String(route.params.slug ?? '')))
+const { assetUrl } = useAssetUrl()
+
+const project = computed(() => {
+    return getProjectDetailBySlug(
+        String(route.params.slug ?? '')
+    )
+})
 
 const projectComponents = {
     thialf: Thialf,
@@ -41,14 +51,24 @@ const projectComponents = {
     blankendaal: Blankendaal,
 }
 
-const projectComponent = computed(() => project.value ? projectComponents[project.value.id] ?? null : null)
+const projectComponent = computed(() => {
+    if (!project.value) {
+        return null
+    }
+
+    return projectComponents[project.value.id] ?? null
+})
 
 useHead(() => ({
-    title: project.value ? `${project.value.label} | Projecten` : 'Projecten',
+    title: project.value
+        ? `${project.value.label} | Projecten`
+        : 'Projecten',
     meta: [
         {
             name: 'description',
-            content: project.value?.description ?? 'Projectpagina van Enduso',
+            content:
+                project.value?.description ??
+                'Projectpagina van Enduso',
         },
     ],
 }))
