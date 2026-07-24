@@ -5,8 +5,8 @@
     <main>
         <div class="container">
             <Breadcrumbs>
-                <a href="/">Home</a>
-                <NuxtLink href="/projects">Projecten</NuxtLink>
+                <NuxtLink to="/">Home</NuxtLink>
+                <NuxtLink to="/projects">Projecten</NuxtLink>
                 <NuxtLink :to="`/projects/${project.id}`">{{ project.label }}</NuxtLink>
             </Breadcrumbs>
 

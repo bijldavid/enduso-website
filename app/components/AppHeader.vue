@@ -1,10 +1,10 @@
 <template>
   <header :class="{ 'is-scrolled': isScrolled, 'has-black-header': hasBlackHeader }">
     <div class="container">
-      <a href="/" class="logo-container">
+      <NuxtLink to="/" class="logo-container">
         <img class="logo-mark" src="/images/enduso-logo-mark.webp" alt="enduso-logo-mark">
         <img class="logo-text" src="/images/enduso-logo-text.webp" alt="enduso-logo-text">
-      </a>
+      </NuxtLink>
 
       <nav :class="{ 'toggle-menu': menuOpen, 'menu-interacted': menuInteracted }" @click="handleNavClick">
         <ul>

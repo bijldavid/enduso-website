@@ -2,8 +2,8 @@
     <main>
         <div class="container">
             <Breadcrumbs>
-                <a href="/">Home</a>
-                <NuxtLink href="/projects">Projecten</NuxtLink>
+                <NuxtLink to="/">Home</NuxtLink>
+                <NuxtLink to="/projects">Projecten</NuxtLink>
             </Breadcrumbs>
 
             <h1>Bekijk alle projecten</h1>

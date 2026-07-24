@@ -2,12 +2,12 @@
     <main>
         <div class="container">
             <Breadcrumbs>
-                <a href="/">Home</a>
-                <NuxtLink href="/About">About</NuxtLink>
+                <NuxtLink to="/">Home</NuxtLink>
+                <NuxtLink to="/About">About</NuxtLink>
             </Breadcrumbs>
             <div class="content-container">
 
-                <h1>Over <span>E</span><span>n</span><span>d</span><span>u</span><span>s</span><span>o</span></h1>
+                <h1>Over Enduso</h1>
                 <p>
                     Wij zijn Endruso: een Noord-Hollands bedrijf met een nuchtere aanpak en een passie voor slimme
                     energieoplossingen. Samen met een team van ervaren energieprofessionals werken wij aan innovatieve
