@@ -9,7 +9,7 @@
 
                 <h1>Over Enduso</h1>
                 <p>
-                    Wij zijn Endruso: een Noord-Hollands bedrijf met een nuchtere aanpak en een passie voor slimme
+                    Wij zijn Enduso: een Noord-Hollands bedrijf met een nuchtere aanpak en een passie voor slimme
                     energieoplossingen. Samen met een team van ervaren energieprofessionals werken wij aan innovatieve
                     projecten die organisaties helpen omgaan met de uitdagingen van de energietransitie.
                 </p>
