@@ -35,8 +35,8 @@ const menuOpen = ref(false)
 const menuInteracted = ref(false)
 const isScrolled = ref(false)
 const route = useRoute()
-const blackHeaderRoutes = ['/projects', '/About']
-const hasBlackHeader = computed(() => blackHeaderRoutes.includes(route.path))
+const blackHeaderRouteNames = ['projects', 'about']
+const hasBlackHeader = computed(() => blackHeaderRouteNames.includes(route.name))
 
 /* ================================================== */
 /* HELPERS                                            */

@@ -81,7 +81,7 @@
 </template>
 
 <script setup>
-import { ref, watch } from 'vue'
+import { ref, watch, onMounted, onUnmounted } from 'vue'
 import { projectCarouselItems } from '~/data/project-carousel'
 
 const { assetUrl } = useAssetUrl()
@@ -106,6 +106,11 @@ function next() {
     goTo(currentIndex.value + 1)
 }
 
+function resetScrollPosition() {
+    if (!carouselEl.value) return
+    carouselEl.value.scrollLeft = 0
+}
+
 watch(currentIndex, (i) => {
     const slide = carouselEl.value?.children[i]
 
@@ -114,6 +119,18 @@ watch(currentIndex, (i) => {
         block: 'nearest',
         inline: 'start',
     })
+})
+
+let rafId
+
+onMounted(() => {
+    resetScrollPosition()
+
+    rafId = requestAnimationFrame(resetScrollPosition)
+})
+
+onUnmounted(() => {
+    if (rafId) cancelAnimationFrame(rafId)
 })
 </script>
 
