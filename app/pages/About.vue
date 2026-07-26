@@ -3,7 +3,7 @@
         <div class="container">
             <Breadcrumbs>
                 <NuxtLink to="/">Home</NuxtLink>
-                <NuxtLink to="/About">About</NuxtLink>
+                <NuxtLink to="/about">About</NuxtLink>
             </Breadcrumbs>
             <div class="content-container">
 
