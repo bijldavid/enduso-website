@@ -33,6 +33,7 @@
 #intro .container h2 {
     --large-size: 1.5rem;
     font-size: var(--large-size);
+    margin-top: -15px;
 }
 
 #intro .container>div {

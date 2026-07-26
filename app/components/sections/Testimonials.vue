@@ -146,7 +146,8 @@ function handleNext() {
     width: 100%;
     height: auto;
 
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
     border-radius: 20px;
     box-shadow: 12px 12px 15px 0px rgb(0 0 0 / 0.2);
@@ -185,7 +186,6 @@ function handleNext() {
 
 #testimonials .container .card-container ul li>p {
     color: var(--neutral-100);
-    margin-right: 2rem;
 }
 
 #testimonials .container .card-container ul li p {
@@ -193,7 +193,10 @@ function handleNext() {
 }
 
 #testimonials .container .card-container ul li .hr {
+    margin-top: auto;
     background: #38445A;
+    justify-self: end;
+    align-self: end;
 }
 
 

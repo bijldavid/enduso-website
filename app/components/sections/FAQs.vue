@@ -160,10 +160,7 @@
     block-size: 0;
     transition: block-size .3s, content-visibility .3s;
     transition-behavior: allow-discrete;
-}
-
-#FAQS .container>div .details-container details:open::details-content {
-    block-size: auto;
+    overflow: clip;
 }
 
 #FAQS .container>div .details-container details::details-content {

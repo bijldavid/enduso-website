@@ -35,8 +35,11 @@ const menuOpen = ref(false)
 const menuInteracted = ref(false)
 const isScrolled = ref(false)
 const route = useRoute()
-const blackHeaderRouteNames = ['projects', 'about']
-const hasBlackHeader = computed(() => blackHeaderRouteNames.includes(route.name))
+const blackHeaderRoutes = ['/projects', '/about']
+const hasBlackHeader = computed(() => {
+  const normalized = route.path.toLowerCase().replace(/\/+$/, '') || '/'
+  return blackHeaderRoutes.includes(normalized)
+})
 
 /* ================================================== */
 /* HELPERS                                            */
