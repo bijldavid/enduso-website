@@ -36,7 +36,7 @@ export const projectCarouselItems = [
         id: 'blankendaal',
         title: 'Bij',
         highlight: 'Blankendaal',
-        afterHighlight: 'wordt energie slim afgestemd op de teelt',
+        afterHighlight: 'wordt energie slim afgestemd op bedrijfsprocessen',
         index: '004',
         label: 'Blankendaal',
         navLabel: 'Blankendaal',

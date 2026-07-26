@@ -22,7 +22,7 @@ export const projectDetails = [
     },
     {
         id: 'blankendaal',
-        title: 'Bij Blankendaal wordt energie slim afgestemd op de teelt',
+        title: 'Bij Blankendaal wordt energie slim afgestemd op bedrijfsprocessen',
         label: 'Blankendaal',
         bannerImage: '/images/blankendaal-project.webp',
         alt: 'Blankendaal Project',
