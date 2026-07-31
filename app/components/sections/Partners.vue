@@ -55,6 +55,7 @@
 
 #partners .container>div div {
     position: relative;
+    display: grid;
 }
 
 #partners .container>div div::before {
